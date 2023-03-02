@@ -1,0 +1,188 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body header {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 1px 3px 1px black;
+    margin-bottom: .5%;
+    width: 100%;
+}
+
+header img {
+    max-width: 8%;
+}
+
+.title {
+    display: inline-flex;
+    padding-left: 3%;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.3vw
+}
+
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 20%;
+    padding-right: 3%;
+}
+
+header li {
+    font-size: 1.3vw;
+}
+
+
+main {
+    display: flex;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: rgb(240, 240, 240);
+}
+
+.hero_image {
+    display: flex;
+    justify-content: center;
+    max-height: 20vw;
+    width: 100%;
+    
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 5%;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 400;
+    box-shadow: 0px 0px 6px 1px rgb(251, 140, 22);
+    padding: 1% 0 1% 0;
+    background-color: white;
+}
+
+h3 {
+    font-size: 1.2vw;
+}
+
+
+.counter {
+    font-weight: bolder;
+    text-decoration: underline;
+    color: rgb(255, 158, 66);
+}
+
+.recent_flights {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.flight_card {
+    box-shadow: 0px 1px 3px 1px black;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 48%;
+    margin: 5% 0 5% 0;
+    text-align: center;
+    background-color: white;
+}
+
+.flight_card h3 {
+    position: relative;
+    top: -15%;
+    box-shadow: 0px 1px 3px 1px black;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    background-color: rgb(186, 237, 255);
+}
+
+.flight_card p {
+    font-size: 1.2vw;
+    position: relative;
+    top: -20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+}
+
+.recent_posts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.post_card {
+    box-shadow: 0px 1px 3px 1px black;
+    flex-basis: 48%;
+    margin: 5% 0 5% 0;
+    text-align: center;
+    background-color: white;
+}
+
+.post_card h3 {
+    position: relative;
+    top: -15%;
+    box-shadow: 0px 1px 3px 1px black;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    background-color: rgb(251, 251, 227);
+}
+
+.post_card p {
+    font-size: 1.2vw;
+    position: relative;
+    top: -15%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+
+}
+
+.side_bar {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 5px 1px rgb(0, 0, 0);
+    min-width: 20%;
+    margin-right: 1%;
+    margin-top: 1%;
+    background-color: white;
+}
+
+.side_card {
+    margin: 10% 10% 4% 10%;
+    box-shadow: 0px 2px 3px 1px rgb(124, 7, 7);
+    background-color: white;
+}
+.side_card h4{
+    text-align: center;
+    font-size: .8vw;
+}
+
+.side_card img {
+    width: 12vw;
+    height: 8vw;
+    margin-left: 12%;
+
+}
+.side_card p {
+    padding-left: 5%;
+    font-size: .8vw;
+}

@@ -35,7 +35,7 @@ border-radius: 50%;
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -52,15 +52,18 @@ span {
 table {
     text-align: left;
     margin: auto;
+    border: solid black 1px;
 }
 
 th {
     padding: 8px;
     font-size: 1.5rem;
+    border: black solid 1px;
 }
 
 td {
 font-size: 1.5rem;
+border: solid black 1px;
 }
 
 .box {
@@ -76,4 +79,10 @@ header {
 
 .nohover:hover {
     background-color: rgba(255, 255, 255, 0);
+}
+
+.table_header{
+    font-size: 2.2rem;
+    text-align: center;
+    border: solid black 2px
 }
