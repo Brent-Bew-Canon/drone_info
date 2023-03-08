@@ -44,22 +44,85 @@ header li {
 
 .hero img {
     display: flex;
-    height: 40vh;
+    height: 35vh;
     width: 100%;
 }
 
 .profile-block {
     display: flex;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin: 2% 5% 3% 5%;
+    text-align: center;
+    height: 50vh;
 }
 
-.profile-block div {
+.profile-pic,
+.flight-data,
+.flight-log {
     border: 1px solid black;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
+
+.profile-block div {}
 
 .profile-pic img {
-    height: 18vh;
-    width: 15vw;
+    height: 60%;
+    width: 45%;
     border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3%;
+}
+
+.profile-pic {
+    background-color: #502424;
+    color: whitesmoke;
+}
+
+.profile-pic h2 {
+    font-size: 2vw;
+}
+
+.underline {
+    border-bottom: 4px solid white;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.profile-pic h3 {
+    font-size: 1.2vw;
+    padding-top: 2%;
+    line-height: 180%;
+}
+
+.flight-data h2 {
+    font-size: 1.7vw;
+    padding-top: 5%;
+    font-weight: 300;
+}
+
+.height-span {
+    line-height: 200%;
+}
+
+.h2-sep {
+    padding-bottom: 10%;
+}
+
+.pilot-meter {}
+
+.pilot-meter span {
+    height: 55px;
+    width: 55px;
+    background-color: #a3a3a37d;
+    border-radius: 50%;
+    display: inline-flex;
+}
+
+.flight-log {
+    background-color: #502424;
+    color: whitesmoke;
 }
