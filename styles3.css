@@ -3,13 +3,16 @@
     margin: 0;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 body header {
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
-    /* box-shadow: 0px 1px 3px 1px black; */
     border-bottom: 1px solid black;
-    /* margin-bottom: .5%; */
     width: 100%;
     z-index: 0;
 }
@@ -52,7 +55,7 @@ header li {
     display: flex;
     margin: 2% 5% 3% 5%;
     text-align: center;
-    height: 50vh;
+    height: 25vw;
 }
 
 .profile-pic,
@@ -69,8 +72,8 @@ header li {
 .profile-block div {}
 
 .profile-pic img {
-    height: 60%;
-    width: 45%;
+    height: 15vw;
+    width: 15vw;
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -115,14 +118,73 @@ header li {
 .pilot-meter {}
 
 .pilot-meter span {
-    height: 55px;
-    width: 55px;
+    height: 4vw;
+    width: 4vw;
     background-color: #a3a3a37d;
     border-radius: 50%;
     display: inline-flex;
+}
+
+span.dot1 {
+    background-color: rgb(77, 193, 255);
 }
 
 .flight-log {
     background-color: #502424;
     color: whitesmoke;
 }
+
+.flight-log h2 {
+    font-size: 2vw;
+    padding-top: 2vw;
+}
+
+.flight-log p {
+    font-size: 1.1vw;
+    background-color: white;
+    color: black;
+    padding: .5vw 0 .5vw 1vw;
+    margin: 3% 20% 0 25%;
+    border-radius: 2%;
+    text-align: left;
+}
+
+.flight-log .followers {
+    line-height: 3vw;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.featured-media h2,
+.other-media h2 {
+    text-align: center;
+    font-size: 3.5vw;
+}
+
+.featured-media img,
+.featured-media video {
+    height: 35vw;
+    width: 80%;
+    margin: 5vw 10% 5vw 10%;
+    object-fit: fill;
+}
+
+.media-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin: 5% 10% 5% 10%;
+}
+
+.media-grid img,
+.media-grid video {
+    width: 45%;
+    height: 25vw;
+    margin: 0% 1% 2% 1%;
+    object-fit: fill;
+}
+
+.media-grid video {}
