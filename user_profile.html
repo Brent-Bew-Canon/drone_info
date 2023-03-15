@@ -40,9 +40,10 @@
             </div>
             <div class="flight-data">
                 <span class="h2-sep">
-                    <h2>Total Flight Time: <br> <span class="height-span">5hrs 23min </span></h2>
+                    <h2>Total Flight Time: <br> <span class="height-span1"> <span class="total-hours">5</span>hrs <span
+                                class="total-minutes">23</span>min </span></h2>
                 </span>
-                <h2>Pilot Level: <br> <span class="height-span">Beginner </span></h2>
+                <h2>Pilot Level: <br> <span class="height-span2">Beginner </span></h2>
                 <div class="pilot-meter">
                     <span class="dot1"></span>
                     <span class="dot2"></span>
@@ -58,6 +59,24 @@
                 <p class="followers">Followers: 213 <br> Following: 320</p>
             </div>
         </section>
+        <div class="white-out"></div>
+
+        <div class="add-flight-time">
+            <p>Add flight time</p>
+            <br>
+            <form action="">
+                <label for="add-hours">Hours:</label>
+                <input type="number" id="add-hours">
+                <br><br>
+                <label for="add-minutes">Minutes:</label>
+                <input type="number" id="add-minutes">
+                <br><br>
+                <label for="add-date">Date</label>
+                <input type="date" id="add-date">
+                <br><br>
+                <button id="log-flight-btn">Submit</button>
+            </form>
+        </div>
 
         <div class="featured-media">
             <h2>Featured Media</h2>
@@ -86,6 +105,7 @@
         </section>
 
     </main>
+    <script src="assets/script.js"></script>
 </body>
 
 </html>

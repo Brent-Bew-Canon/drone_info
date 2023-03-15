@@ -69,7 +69,6 @@ header li {
     padding-bottom: 1%;
 }
 
-.profile-block div {}
 
 .profile-pic img {
     height: 15vw;
@@ -107,15 +106,21 @@ header li {
     font-weight: 300;
 }
 
-.height-span {
+.height-span1::after {
+    content: "⬇️";
+}
+
+.height-span1 {
+    line-height: 200%;
+}
+
+.height-span2 {
     line-height: 200%;
 }
 
 .h2-sep {
     padding-bottom: 10%;
 }
-
-.pilot-meter {}
 
 .pilot-meter span {
     height: 4vw;
@@ -153,6 +158,45 @@ span.dot1 {
     line-height: 3vw;
     padding-top: 0;
     padding-bottom: 0;
+}
+
+.add-flight-time {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    box-shadow: 1px 1px 2px 2px rgb(0, 0, 0);
+    padding: 2%;
+    position: relative;
+    top: -21vw;
+    z-index: 100;
+    background-color: white;
+    width: 30%;
+}
+
+.add-flight-time p {
+    font-size: 2vw;
+    text-align: center;
+    font-weight: bold;
+}
+
+.add-flight-time input {
+    width: 50%;
+}
+
+.add-flight-time button {
+    height: 3vw;
+}
+
+.white-out {
+    display: none;
+    height: 500%;
+    width: 500%;
+    border: solid black 1px;
+    background-color: white;
+    position: absolute;
+    z-index: 99;
+    opacity: .9;
 }
 
 .featured-media h2,
