@@ -20,8 +20,8 @@
             <img src="assets/images/Mavic_Air_2.jpeg" alt="">
         </div>
         <input id="search" type="text" placeholder="Search for user.."
-            class="bg-white border rounded-md placeholder:italic placeholder:text-slate-400 mr-2">
-        <button id="searchBtn" class="mr-3 border rounded-md p-1">Search</button>
+            class="bg-white border border-1 p-1 border-slate-500 rounded-md placeholder:italic placeholder:text-slate-400 mr-2 hover:bg-slate-200 hover:border-none ">
+        <button id="searchBtn" class="mr-3 rounded-md p-1 bg-blue-500 text-white hover:bg-blue-700">Search</button>
         <ul>
             <li>Link1 </li>
             <li>Link2 </li>
@@ -44,9 +44,16 @@
             </div>
             <div class="flight-data">
                 <span class="h2-sep">
-                    <h2>Total Flight Time: <br> <span class="height-span1"> <span class="total-hours">5</span>hrs <span
-                                class="total-minutes">23</span>min </span></h2>
+                    <h2>Total Flight Time: <br>
+                        <span class="total-hours">0</span>
+                        hrs
+                        <span class="total-minutes">0</span>min
+                    </h2>
+                    <button id="logTime" class="rounded-full bg-sky-400 p-2 text-slate-100 hover:outline hover:outline-1 hover:outline-cyan-500
+
+                    ">Log Time</button>
                 </span>
+
                 <h2>Pilot Level: <br> <span class="height-span2">Beginner </span></h2>
                 <div class="pilot-meter">
                     <span class="dot1"></span>
@@ -58,9 +65,15 @@
             </div>
             <div class="flight-log">
                 <h2>Last Flight Logged: </h2>
-                <p>September 8th, 2022 <br> 1 hr 35min</p>
+                <div class="last-flight">
+                    <p id="last-date">No Flight Logged </p>
+                    <p id="last-time">0hr 0min</p>
+                </div>
                 <h2>Community:</h2>
-                <p class="followers">Followers: 213 <br> Following: 320</p>
+                <div class="community">
+                    <p class="followers">Followers: 213</p>
+                    <p class="followers">Following: 320</p>
+                </div>
             </div>
         </section>
         <div class="white-out"></div>
