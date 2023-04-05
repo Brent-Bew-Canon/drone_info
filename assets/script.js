@@ -99,30 +99,35 @@ function resetValues() {
     flightMinutes.value = 0;
 }
 
-// FIXME not writing pilot level to doc
 function pilotLevel() {
     if (Number(localStorage.getItem("Hours") >= 100)) {
         for (let i = 2; i < 6; i++) {
             let dot = $(".dot" + i)
             dot.attr("style", "background-color: rgb(77, 193, 255)")
         }
-        $(".height-span2").val("master")
+        $("#pLevel").text("Master")
     } else if (Number(localStorage.getItem("Hours") >= 50)) {
         for (let i = 2; i < 5; i++) {
             let dot = $(".dot" + i)
             dot.attr("style", "background-color: rgb(77, 193, 255)")
         }
-        $(".height-span2").val("exxcleent")
+        $("#pLevel").text("Professional")
     } else if (Number(localStorage.getItem("Hours") >= 20)) {
         for (let i = 2; i < 4; i++) {
             let dot = $(".dot" + i)
             dot.attr("style", "background-color: rgb(77, 193, 255)")
         }
-        $(".height-span2").val("greart guy")
+        $("#pLevel").text("Hobbyist")
     } else if (Number(localStorage.getItem("Hours") >= 10)) {
         let i = 2
-        $(".height-span2").val("Cool guy")
+        $("#pLevel").text("Amateur")
         let dot = $(".dot" + i)
+        dot.attr("style", "background-color: rgb(77, 193, 255)")
+    }
+    else if (Number(localStorage.getItem("Hours") < 10)) {
+
+        $("#pLevel").text("Beginner")
+        let dot = $(".dot" + 1)
         dot.attr("style", "background-color: rgb(77, 193, 255)")
     }
 }
