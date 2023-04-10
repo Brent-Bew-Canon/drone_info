@@ -13,6 +13,8 @@ let fHours = 0
 let fMinutes = 0
 let fDate = ""
 
+//FIXME doesn't correctly write date from local storage on startup
+
 // set the correct flight log values based on local storage data
 function init() {
     let initHrs = localStorage.getItem("Hours")
